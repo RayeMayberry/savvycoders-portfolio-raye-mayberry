@@ -1,0 +1,24 @@
+{
+  "name": "RayeMayberry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nascenticity/savvycoders-portfolio-raye-mayberry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nascenticity/savvycoders-portfolio-raye-mayberry/issues"
+  },
+  "homepage": "https://github.com/nascenticity/savvycoders-portfolio-raye-mayberry#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "parcel-bundler": "^1.11.0"
+  }
+}
