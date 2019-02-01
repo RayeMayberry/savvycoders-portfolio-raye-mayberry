@@ -2,6 +2,30 @@ body {
     background-color: burlywood;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#navigation {
+    background-color: cadetblue;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+    #navigation ul {
+        padding: 10px;
+        margin: 0;
+    }
+
+    #navigation li {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 25px;
+        background-color: brown;
+    }
+    #navigation a {
+        color: cadetblue;
+        text-decoration: none;
+    }
+
 h1, h2 {
     color: purple;
     font-family: 'Courier New', Courier, monospace;
@@ -17,14 +41,3 @@ h1 {
     margin: 0 auto;
 }
 
-.fancy {
-    color:cadetblue;
-    background-color: brown;
-    text-decoration: none;
-    border-radius: 10px;
-}
-#blox {
-    background-color: cadetblue;
-    padding: 5px;
-    margin: 0;
-}
