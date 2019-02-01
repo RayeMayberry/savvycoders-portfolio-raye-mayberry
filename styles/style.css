@@ -1,18 +1,30 @@
 body {
     background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1, h2 {
     color: purple;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+h1 {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .fancy {
     color:cadetblue;
     background-color: brown;
-    padding: 5px;
+    text-decoration: none;
     border-radius: 10px;
 }
 #blox {
-    border: 1px purple dotted;
+    background-color: cadetblue;
     padding: 5px;
     margin: 0;
 }
