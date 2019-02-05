@@ -3,6 +3,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 #navigation {
     background-color: cadetblue;
     padding: 0;
@@ -41,3 +45,6 @@ h1 {
     margin: 0 auto;
 }
 
+.pepper {
+   
+}
