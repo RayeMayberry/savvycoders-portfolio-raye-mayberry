@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
     <title>Contact Info</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-        <div id="navigation">
-                <ul class="container">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
+    <div id="navigation">
+        <ul class="container">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/projects">Projects</a></li>
+        </ul>
+    </div>
     <div id="header" class="container">
         <h1>HMU</h1>
     </div>
     <div id="main" class="container">
         <form action="http://formspree.io/rayemayberry@yahoo.com" method="POST">
             <label for="fname">First Name</label>
-            <input type="text" name="first-name"id="fname" required>
+            <input type="text" name="first-name" id="fname" required>
 
             <label for="lname">Last Name</label>
             <input type="text" name="last-name" id="lname" required>
@@ -34,11 +37,12 @@
 
             <label for="text">Your message here:</label>
             <textarea name="text" id="text" cols="30" rows="10" placeholder="Hello world!"></textarea>
-            
+
             <input type="submit" value="Submit">
             <input type="reset" value="clear">
         </form>
     </div>
-    <div id="footer"class="container"></div>    
+    <div id="footer" class="container"></div>
 </body>
+
 </html>
