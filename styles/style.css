@@ -1,6 +1,6 @@
 body {
     background-color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Varela Round", sans-serif;
     margin: 0;
     padding:0;
     display: grid;
@@ -17,9 +17,9 @@ a {
 }
 
 
-h1, h2 {
+h1, h2, #navigation {
     color: purple;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Staatliches", sans-serif;
 }
 
 h1 {
@@ -37,7 +37,6 @@ h1 {
     top: 0;
     grid-area: navigation;
     background-color: cadetblue;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
     #navigation ul, #navigation a {
