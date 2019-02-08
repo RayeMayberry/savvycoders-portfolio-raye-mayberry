@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding:0;
     display: grid;
+    grid-template-areas: "navigation"
+                         "header"
+                         "content"
+                         "footer";
     grid-template-rows: min-content min-content auto min-content;
     min-height: 100vh;
 }
@@ -31,37 +35,44 @@ h1 {
 #navigation {
     position: sticky;
     top: 0;
+    grid-area: navigation;
     background-color: cadetblue;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
-    #navigation ul {
+    #navigation ul, #navigation a {
         padding: 10px;
     }
+    
+        #navigation > ul {
+            display: flex;
+            justify-content: space-between;
+        }
 
+    /* AESTHETIC */
     #navigation li {
         padding: 10px;
         border-radius: 25px;
-        border: 1px solid purple;
+        border: 1px solid cadetblue;
         background-color: brown;
         list-style: none;
     }
 
     #navigation li:hover {
         background-color: antiquewhite;
+        border-color: purple;
     }
 
     #navigation > ul > li {
-        display: inline;
         position: relative;
     }
 
-    #navigation > ul > li > ul {
+    #navigation li > ul {
         position: absolute;
         left: 0;
         display: none;
     }
-        #navigation > ul > li:hover > ul {
+        #navigation li:hover > ul {
             display: list-item;
             list-style: none;
         }
@@ -72,5 +83,32 @@ h1 {
     }
 
 #header {
+    grid-area: header;
     background-color: antiquewhite;
+}
+
+#content {
+    grid-area: content;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: cadetblue;
+}
+
+@media(min-width: 800px){
+    body {
+        grid-template-areas: "navigation header" 
+                             "navigation content"
+                             "navigation footer";
+        grid-template-rows: min-content auto min-content;
+        grid-template-columns: minmax(min-content,20vw) auto;
+    }
+    #navigation > ul {
+        flex-direction: column;
+    }
+    #navigation > ul > li {
+        display: list-item;
+        align-content: flex-end;
+    }
 }
