@@ -3,6 +3,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding:0;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    min-height: 100vh;
 }
 
 a {
@@ -16,7 +19,6 @@ h1, h2 {
 }
 
 h1 {
-    background-color: antiquewhite;
     padding: 20px;
     margin:0;
 }
@@ -26,19 +28,9 @@ h1 {
     margin: 0 auto;
 }
 
-.pepper {
-   
-}
-
-#header {
-    padding-top: 100px;
-}
-
 #navigation {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
+    position: sticky;
+    top: 0;
     background-color: cadetblue;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -50,6 +42,7 @@ h1 {
     #navigation li {
         padding: 10px;
         border-radius: 25px;
+        border: 1px solid purple;
         background-color: brown;
         list-style: none;
     }
@@ -78,4 +71,6 @@ h1 {
         text-decoration: none;
     }
 
-    
+#header {
+    background-color: antiquewhite;
+}
