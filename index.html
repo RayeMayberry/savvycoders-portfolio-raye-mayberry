@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Raye's Savvy Coders Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Staatliches|Varela+Round" rel="stylesheet">
 </head>
@@ -27,20 +29,24 @@
         </ul>
     </div>
     <div id="header">
-        <h1 class="container">Welcome To My SavvyCoders Portfolio Project</h1>
+        <h1 class="container">Welcome To My SavvyCoders Portfolio Project<span><!--insert name variable here--></span> </h1>
     </div>
     <div id="main" class="container">
+        <p id="yo"></p>
         <h2>Check out this picture of my cat!</h2>
         <img class="pepper" src="https://avatars0.githubusercontent.com/u/38679090?s=460&v=4" alt="THis is a picture of my cat sitting in a trash can.">
         <ul>
                 <li><a href="/">derp</a></li>
                 <li><a href="http://github.com/nascenticity">Github</a></li>
-                <li><a href="http://twitter.com/nascenticity">Twitter</a></li>
+                <li><a href="http://twitter.com/nascenticity"> <i class="fab fa-twitter"></i> Twitter</a></li>
             </ul>
     </div>
     <div id="footer" class="container"></div>
 
-
+    <script>
+    var name= prompt("new website who this");
+    document.querySelector('#header span').textContent = `, ${name}`;
+    </script>
 
 </body>
 
