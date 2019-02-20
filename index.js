@@ -10,10 +10,10 @@ import Footer from './src/Footer';
 var root = document.querySelector('#root');
 
 root.innerHTML = `
-        ${Navigation}
-        ${Header}
-        ${Content}
-        ${Footer}
+        ${Navigation()}
+        ${Header('Welcome to my SavvyCoders Profile')}
+        ${Content()}
+        ${Footer()}
         
 `
 ;

@@ -1,5 +1,5 @@
-export default
-`
+export default function Content(){
+    return `
 <div id="main" class="container">
         <p id="yo"></p>
         <h2>Check out this picture of my cat!</h2>
@@ -11,3 +11,4 @@ export default
             </ul>
     </div>
 `;
+}

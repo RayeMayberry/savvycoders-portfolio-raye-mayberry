@@ -1,5 +1,8 @@
-export default `
-<div id="header">
-    <h1 class="container">Welcome To My SavvyCoders Portfolio Project<span><!--insert name variable here--></span> </h1>
-</div>
+export default function Header(title){
+    return  `
+    <div id="header">
+    <h1 class="container">${title}</h1>
+    <span></span>
+    </div>
 `;
+}
