@@ -5,9 +5,9 @@ export default function namePrompt(){
         name = prompt('name pls');
     }
     else if(name === null){
-        document.querySelector('#header span').textContent = '';
+        document.querySelector('root #header span').textContent = '';
     }
     else{
-        document.querySelector('#header span').textContent = `, ${name}`;
+        document.querySelector('root #header span').textContent = `, ${name}`;
     }
 }

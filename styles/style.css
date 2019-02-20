@@ -1,4 +1,4 @@
-body {
+#root {
     background-color: burlywood;
     font-family: "Varela Round", sans-serif;
     margin: 0;
@@ -103,7 +103,7 @@ h1 {
 }
 
 @media(min-width: 800px){
-    body {
+    #root {
         grid-template-areas: "navigation header" 
                              "navigation content"
                              "navigation footer";
