@@ -1,8 +1,21 @@
 /* eslint-disable linebreak-style */
 import Navigation from './src/Navigation';
+import Header from './src/Header';
+import Content from './src/Content';
+import Footer from './src/Footer';
 
 var name;
 var originalContent = document.body.innerHTML;
+
+
+document.body.innerHTML = `
+        ${Navigation}
+        ${Header}
+        ${Content}
+        ${Footer}
+        ${originalContent}
+`
+;
 
 var blankChecker = function blankChecker(){
     if(name === ''){
@@ -23,9 +36,3 @@ var namePrompt = function namePrompt(){
 
 namePrompt();
 
-
-document.body.innerHTML = `
-        ${Navigation}
-        ${originalContent}
-`
-;

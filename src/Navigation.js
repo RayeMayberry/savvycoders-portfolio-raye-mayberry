@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 export default `
 <div id="navigation">
         <ul class="container">
