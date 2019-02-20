@@ -31,7 +31,12 @@ var namePrompt = function namePrompt(){
     
     blankChecker();
 
-    document.querySelector('#header span').textContent = `, ${name}`;
+    if(name === null){
+        document.querySelector('#header span').textContent = '';
+    }
+    else{
+        document.querySelector('#header span').textContent = `, ${name}`;
+    }
 };
 
 namePrompt();
