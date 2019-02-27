@@ -7,72 +7,70 @@ import Footer from './src/Footer';
 // import namePrompt from './src/Greeter';
 
 // these objects contain data to be displayed on each of our pages
-var home = {
-    'title': 'Welcome to my SavvyCoders Website!'
+var globalState = {
+    'home': {
+        'title': 'Welcome to my SavvyCoders Website!'
+    },
+    'blog': {
+        'title': 'We are the Blog'
+    },
+    'contact': {
+        'title': 'Contact Me'
+    },
+    'projects': {
+        'title': 'My Projects'
+    }
 };
-
-var blog = {
-    'title': 'We are the Blog'
-};
-
-var contact = {
-    'title': 'Contact Me'
-};
-
-var projects = {
-    'title': 'My Projects'
-};
-
 
 var root = document.querySelector('#root');
 
 function render(state){
+    var links;
+
     root.innerHTML = `
         ${Navigation(state)}
         ${Header(state.title)}
         ${Content(state)}
         ${Footer(state)}`;
+
+    links = document.querySelectorAll('#navigation > ul > li > a');
+
+    links[0].addEventListener('click',
+        (event) => {
+            event.preventDefault();
+            render(state[event.target.textContent]);
+        }
+    );
+
+    links[1].addEventListener('click',
+        (event) => {
+            event.preventDefault();
+            render(state[event.target.textContent]);
+        }
+    );
+
+    links[2].addEventListener('click',
+        (event) => {
+            event.preventDefault();
+            render(state[event.target.textContent]);
+        }
+    );
+
+    links[3].addEventListener('click',
+        (event) => {
+            event.preventDefault();
+            render(state[event.target.textContent]);
+        }
+    );
+
+    links[4].addEventListener('click',
+        (event) => {
+            event.preventDefault();
+            render(state[event.target.textContent]);
+        }
+    );
 }
 
-render(home);
-
-// namePrompt();
+render(globalState.home);
 
 
-// Create event handlers for each nav link, rendering the coresponding page title
-
-document.querySelector('#navigation li:nth-of-type(1) > a').addEventListener('click',
-    (e) => {
-        e.preventDefault();
-        console.log(e.target);
-        console.log(e.target.href);
-        render(home);
-    }
-);
-
-document.querySelector('#navigation li:nth-of-type(2) > a').addEventListener('click',
-    (e) => {
-        e.preventDefault();
-        console.log(e.target);
-        console.log(e.target.href);
-        render(blog);
-    }
-);
-
-document.querySelector('#navigation li:nth-of-type(3) > a').addEventListener('click',
-    (e) => {
-        e.preventDefault();
-        console.log(e.target);
-        console.log(e.target.href);
-        render(contact);
-    }
-);
-
-document.querySelector('#navigation li:nth-of-type(4) > a').addEventListener('click',
-    (e) => {
-        e.preventDefault();
-        console.log(e.target);
-        console.log(e.target.href);
-        render(projects);
-    }
-);
