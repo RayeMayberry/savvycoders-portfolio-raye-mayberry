@@ -8,17 +8,21 @@ import Footer from './src/Footer';
 
 // these objects contain data to be displayed on each of our pages
 var globalState = {
-    'home': {
-        'title': 'Welcome to my SavvyCoders Website!'
+    'Blog': {
+        'links': ['Home', 'Contact', 'Projects'],
+        'title': 'Welcome to my Blog'
     },
-    'blog': {
-        'title': 'We are the Blog'
+    'Home': {
+        'links': ['Blog', 'Contact', 'Projects'],
+        'title': 'Welcome to my Portfolio'
     },
-    'contact': {
+    'Contact': {
+        'links': ['Home', 'Blog', 'Projects'],
         'title': 'Contact Me'
     },
-    'projects': {
-        'title': 'My Projects'
+    'Projects': {
+        'links': ['Home', 'Contact', 'Projects'],
+        'title': 'Check out my Projects'
     }
 };
 
@@ -26,51 +30,27 @@ var root = document.querySelector('#root');
 
 function render(state){
     var links;
+    var i = 0;
 
     root.innerHTML = `
         ${Navigation(state)}
         ${Header(state.title)}
         ${Content(state)}
-        ${Footer(state)}`;
+        ${Footer(state)}
+    `;
 
     links = document.querySelectorAll('#navigation > ul > li > a');
 
-    links[0].addEventListener('click',
-        (event) => {
-            event.preventDefault();
-            render(state[event.target.textContent]);
-        }
-    );
+    while(i < links.length){
+        links[i].addEventListener('click',
+            (event) => {
+                event.preventDefault();
+                render(globalState[event.target.textContent]);
+            }
 
-    links[1].addEventListener('click',
-        (event) => {
-            event.preventDefault();
-            render(state[event.target.textContent]);
-        }
-    );
-
-    links[2].addEventListener('click',
-        (event) => {
-            event.preventDefault();
-            render(state[event.target.textContent]);
-        }
-    );
-
-    links[3].addEventListener('click',
-        (event) => {
-            event.preventDefault();
-            render(state[event.target.textContent]);
-        }
-    );
-
-    links[4].addEventListener('click',
-        (event) => {
-            event.preventDefault();
-            render(state[event.target.textContent]);
-        }
-    );
+        );
+        i++;
+    }
 }
 
-render(globalState.home);
-
-
+render(globalState.Home);
