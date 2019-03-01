@@ -9,19 +9,19 @@ import Footer from './src/Footer';
 // these objects contain data to be displayed on each of our pages
 var globalState = {
     'Blog': {
-        'links': ['Home', 'Contact', 'Projects'],
+        'links': [ 'Home', 'Contact', 'Projects' ],
         'title': 'Welcome to my Blog'
     },
     'Home': {
-        'links': ['Blog', 'Contact', 'Projects'],
+        'links': [ 'Blog', 'Contact', 'Projects' ],
         'title': 'Welcome to my Portfolio'
     },
     'Contact': {
-        'links': ['Home', 'Blog', 'Projects'],
+        'links': [ 'Home', 'Blog', 'Projects' ],
         'title': 'Contact Me'
     },
     'Projects': {
-        'links': ['Home', 'Contact', 'Projects'],
+        'links': [ 'Home', 'Blog', 'Contact' ],
         'title': 'Check out my Projects'
     }
 };
