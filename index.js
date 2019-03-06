@@ -5,7 +5,7 @@ import Header from './src/Header';
 import Content from './src/Content';
 import Footer from './src/Footer';
 import * as State from './state';
-// import { startCase } from 'lodash';
+import { startCase } from 'lodash';
 import Navigo from 'navigo';
 
 var router = new Navigo(location.origin);
@@ -23,8 +23,8 @@ function render(state){
 }
 
 function handleNavigation(params){
-    var destination = params.page;
-    
+    var destination = startCase(params.page);
+
     render(State[destination]); // eslint-disable-line
 }
 
