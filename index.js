@@ -15,7 +15,7 @@ var root = document.querySelector('#root');
 function render(state){
     root.innerHTML = `
         ${Navigation(state)}
-        ${Header(state.title)}
+        ${Header(state)}
         ${Content(state)}
         ${Footer(state)}
     `;
