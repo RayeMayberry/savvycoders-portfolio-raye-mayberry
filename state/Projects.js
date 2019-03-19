@@ -1,4 +1,5 @@
 export default {
     'links': [ 'Home', 'Blog', 'Contact' ],
-    'title': 'Check out my Projects'
+    'title': 'Check out my Projects',
+    'body': 'Projects'
 };

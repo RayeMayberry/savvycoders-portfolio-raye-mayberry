@@ -11,7 +11,6 @@ function linkBuilder(links){
         return `<li><a data-navigo href="./${destination}">${element}</a></li>`;
     }).join(' ');
     
-    console.log(output);
     
     return output;
 }
