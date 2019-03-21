@@ -1,6 +1,5 @@
 export default function Home(){
     return `
-        <p id="yo"></p>
         <h2>Check out this picture of my cat!</h2>
         <img class="pepper" src="https://avatars0.githubusercontent.com/u/38679090?s=460&v=4" alt="THis is a picture of my cat sitting in a trash can.">
         <ul>

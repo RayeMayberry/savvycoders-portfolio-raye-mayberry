@@ -4,5 +4,5 @@
 
 I have a little prior experience with html/css but this is my first time using javascript and other things.
 
-1. [github](http://github.com/nascenticity)
-2. [twitter](http://twitter.com/nascenticity)
+1. [github](http://github.com/RayeMayberry)
+2. [linkedin](https://www.linkedin.com/in/raye-mayberry-767570106/)
