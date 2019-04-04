@@ -1,7 +1,7 @@
 #root {
     background-color: burlywood;
     font-family: "Varela Round", sans-serif;
-    font-size: 1em;
+    font-size: 14pt;
     margin: 0;
     padding:0;
     display: grid;
@@ -21,6 +21,10 @@ a {
 h1, h2, #navigation {
     color: purple;
     font-family: "Staatliches", sans-serif;
+}
+
+#navigation {
+    font-size: 16pt;;
 }
 
 h1 {
@@ -67,17 +71,7 @@ h1 {
         position: relative;
         display: inline-block;
     }
-
-    #navigation li > ul {
-        position: absolute;
-        left: 0;
-        display: none;
-    }
-        #navigation li:hover > ul {
-            display: list-item;
-            list-style: none;
-        }
-
+    
     #navigation a {
         color: cadetblue;
         text-decoration: none;
@@ -105,16 +99,16 @@ h1 {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
-@media(min-width: 800px){
+@media(orientation: landscape){
     #root {
         grid-template-areas: "navigation header" 
                              "navigation content"
                              "navigation footer";
         grid-template-rows: min-content auto min-content;
-        grid-template-columns: minmax(min-content,20vw) auto;
+        grid-template-columns: min-content auto;
     }
     #navigation > ul {
         flex-direction: column;
