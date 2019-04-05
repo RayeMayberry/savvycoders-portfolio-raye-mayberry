@@ -14,7 +14,7 @@ export default function Contact(){
         <input type="tel" name="phone" id="phone">
 
         <label for="text">Your message here:</label>
-        <textarea name="text" id="text" cols="30" rows="10" placeholder="Hello world!"></textarea>
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="Hi Raye, I like your website and would love to talk to you about your projects!"></textarea>
 
         <input type="submit" value="Submit">
         <input type="reset" value="clear">

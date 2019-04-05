@@ -8,7 +8,7 @@ function linkBuilder(links){
             destination = lowerCase(element);
         }
         
-        return `<li><a data-navigo href="./${destination}">${element}</a></li>`;
+        return `<a data-navigo href="./${destination}">${element}</a>`;
     }).join(' ');
     
     
@@ -18,9 +18,8 @@ function linkBuilder(links){
 export default function Navigation(state){
     return `
     <div id="navigation">
-        <ul class="container">
             ${linkBuilder(state.links)}  
-        </ul>
+        
     </div>
 `;
 }

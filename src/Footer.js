@@ -1,5 +1,9 @@
 export default function Footer(){
     return `
-<div id="footer" class="container">:foot emoji:</div>
+<div id="footer">
+    <a>GitHub</a>
+    <a>LinkedIn</a>
+    <a>Twitter</a>
+</div>
 `;
 }
