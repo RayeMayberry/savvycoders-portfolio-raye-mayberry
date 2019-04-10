@@ -25,6 +25,7 @@ body, #content {
 .container {
     width: 80%;
     margin: 0 auto;
+    max-width: 900px;
 }
 
 a {
@@ -35,7 +36,7 @@ a:visited {
     color:cadetblue;
 }
 
-#navigation, #footer {
+#navigation, #footer div {
     display: flex;
     justify-content: space-evenly;
 
@@ -80,6 +81,10 @@ img {
     #root {
         grid-template-rows: min-content auto min-content;
         grid-template-columns: min-content auto;
+    }
+
+    .container {
+        margin-left: 20px;
     }
     #header, #content, #footer {
         grid-column-start: 2;
